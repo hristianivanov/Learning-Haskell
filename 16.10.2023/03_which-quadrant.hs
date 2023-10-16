@@ -1,21 +1,21 @@
 quadrant :: Double -> Double -> String
 quadrant x y =
     if x > 0 && y > 0
-        then "First Quadrant"
+        then "first"
     else if x < 0 && y > 0
-        then "Second Quadrant"
+        then "second"
     else if x < 0 && y < 0
-        then "Third Quadrant"
+        then "third"
     else if x > 0 && y < 0
-        then "Fourth Quadrant"
+        then "fourth"
     else
-        "On an axis or at the origin"
+        "x and y -> ( 0, 0 )"
 
 main :: IO ()
 main = do
-    putStrLn "Enter the x coordinate:"
+    putStr "Enter the x coordinate: "
     x <- readLn
-    putStrLn "Enter the y coordinate:"
+    putStr "Enter the y coordinate: "
     y <- readLn
     let result = quadrant x y
-    putStrLn $ "The point (" ++ show x ++ ", " ++ show y ++ ") is in: " ++ result
+    putStrLn $ "The point is in: " ++ result
