@@ -3,6 +3,13 @@
 --    let firstNum = read firstLine :: Float
 --    print firstNum
 
+-- main :: IO ()
+-- main = do
+--     putStr "Enter a number: "
+--     input <- getLine
+--     let n = read input :: Int
+--     putStrLn $ "You entered: " ++ show n
+
 main :: IO ()
 main = do
     input <- getLine
@@ -13,4 +20,5 @@ fib :: Int -> Int
 fib num =
     if num == 0 || num == 1
         then 1
-    else fib (num - 1) + fib (num - 2)
+        else fib (num - 1) + fib (num - 2)
+
