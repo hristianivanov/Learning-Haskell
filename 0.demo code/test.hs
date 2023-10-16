@@ -13,4 +13,4 @@ fib :: Int -> Int
 fib num =
     if num == 0 || num == 1
         then 1
-        else fib (num - 1) + fib (num - 2)
+    else fib (num - 1) + fib (num - 2)
