@@ -1,7 +1,7 @@
 class BankAccount account where
     deposit:: account-> Float -> account
-    withdraw::account-> Float -> account
-    checkBalance::account->Float
+    withdraw:: account-> Float -> account
+    checkBalance:: account-> Float
  
 data Account = Account {accountOwner::String, balance::Float}  deriving(Show, Read)
  
