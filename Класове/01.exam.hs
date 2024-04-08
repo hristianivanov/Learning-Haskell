@@ -2,7 +2,7 @@ class KindOffer a where
     addKind :: a -> [a] -> [a]
     discountKinds :: [a] -> [a]
     
-data Kind = Kind { name :: String, price :: Double } deriving (Show, Read)
+data Kind = Kind { name :: String, price :: Float } deriving (Show, Read)
 
 instance KindOffer Kind where
     addKind kind kinds = kind : kinds
